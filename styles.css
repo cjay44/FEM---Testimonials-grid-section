@@ -80,20 +80,28 @@ body {
     display: flex;
     justify-content: center;
     font-family: "Barlow Semi Condensed", sans-serif;
+    background-color: var(--Neutral-Light-Grayish-blue);
 }
 
 .grid-container {
     width: 100%;
-    padding: 80px 40px;
+    padding: 80px 60px;
+    margin-top: 80px;
 }
 
 .grid-children {
     width: 100%;
     background-color: skyblue;
-    border-radius: 10px;
-    margin: 30px 0px;
+    border-radius: 20px;
     padding: 45px 80px;
+    box-shadow: 0 0 10px 0.5px #00000017;
 }
+
+
+.grid-children:nth-child(n+2):nth-child(-n+5) {
+    margin-top: 65px;
+}
+
 
 .name-container {
     display: flex;
@@ -104,17 +112,17 @@ body {
 }
 
 .name-container-text {
-    padding: 5px;
+   padding: 10px 0px; 
 }
 
 .image > img {
-    width: 75px;
+    width: 100px;
     border-radius: 50px;
-    border: 1.5px solid purple;
+    border: 5px solid hsl(263, 68%, 67%);
 }
 
 .image {
-    width:75px;
+    width:100px;
     padding: 5px;
     margin-right: 25px;
 }
@@ -126,27 +134,116 @@ body {
 }
 
 .subtext {
-   font-size: 1.5rem;
+  margin-top: 7px;
+   font-size: 1.75rem;
     display: block;
 }
 
-/* Grid Children */
+/* Grid Children 1 Testimonial container */
 
 .grid-child-1 {
     background-color: var(--primary-moderate-violet);
     
 }
 
-.testimonial-container > .heading  {
+.grid-child-1 > .testimonial-container > .heading  {
     color: var(--primary-white);
     font-weight: 600;
     letter-spacing: 0.025rem;
 }
 
-.testimonial-container > .testimonial  {
+.grid-child-1 > .testimonial-container > .testimonial  {
     color: hsla(0, 0%, 100%, 0.500);
     font-weight: 500;
     }
+
+ /* Grid Children 1 Name container */
+.grid-child-1 > .name-container > .name-container-text > .name {
+  color: hsla(0, 0%, 100%, 0.76);
+}
+
+.grid-child-1 > .name-container > .name-container-text > .subtext {
+  color: hsla(0, 0%, 100%, 0.500);
+}
+
+/* Grid Child 2 */
+
+.grid-child-2 {
+  background-color: var(--primary-dark-grayish-blue);
+  
+}
+
+.grid-child-2 > .testimonial-container > .heading  {
+  color: var(--primary-white);
+  font-weight: 600;
+  letter-spacing: 0.025rem;
+}
+
+.grid-child-2 > .testimonial-container > .testimonial  {
+  color: hsla(0, 0%, 100%, 0.500);
+  font-weight: 500;
+  }
+
+/* Grid Children 2 Name container */
+.grid-child-2 > .name-container > .name-container-text > .name {
+color: hsla(0, 0%, 100%, 0.76);
+}
+
+.grid-child-2 > .name-container > .name-container-text > .subtext {
+color: hsla(0, 0%, 100%, 0.500);
+}
+
+/* Grid Child 3 & 5 */
+.grid-child-3, .grid-child-5 {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px;
+}
+
+.grid-child-3, .grid-child-5 > .testimonial-container > .heading  {
+  color: var( --primary-dark-grayish-blue);
+  font-weight: 600;
+  letter-spacing: 0.025rem;
+}
+
+.grid-child-3, .grid-child-5 > .testimonial-container > .testimonial  {
+  color: hsla(217, 19%, 35%, 0.555);   
+}
+
+/* Grid Children 3 Name container */
+.grid-child-3, .grid-child-5 > .name-container > .name-container-text > .name {
+color: var(--primary-dark-grayish-blue);
+}
+
+.grid-child-3, .grid-child-5 > .name-container > .name-container-text > .subtext {
+color: hsla(217, 19%, 35%, 0.658);
+}
+
+
+/* Grid Child 4 */
+.grid-child-4 {
+  background-color: var(--primary-dark-blackish-blue);
+  box-shadow: 5px;
+}
+
+.grid-child-4 > .testimonial-container > .heading  {
+  color: var(--primary-white);
+  font-weight: 600;
+  letter-spacing: 0.025rem;
+}
+
+.grid-child-4 > .testimonial-container > .testimonial  {
+  color: rgba(255, 255, 255, 0.308);   
+}
+
+/* Grid Children 4 Name container */
+.grid-child-4 > .name-container > .name-container-text > .name {
+color: var(--primary-white);
+}
+
+.grid-child-4 > .name-container > .name-container-text > .subtext {
+color: rgba(255, 255, 255, 0.473);
+}
+
 
 /* Testimonial Container */
 
