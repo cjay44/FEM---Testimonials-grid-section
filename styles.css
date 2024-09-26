@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;300;400;500;600&display=swap');
 
 /* RESET */
 
@@ -66,9 +64,9 @@
 --primary-moderate-violet: hsl(263, 55%, 52%) ;
 --primary-dark-grayish-blue: hsl(217, 19%, 35%) ;
 --primary-dark-blackish-blue: hsl(219, 29%, 14%);
---primary-white: hsl(0, 0%, 100%) ;
+--primary-white: hsl(0, 0%, 97%) ;
 /* Neutral */
---Neutral-Light-Gray:hsl(0, 0%, 81%) ;
+--Neutral-Light-Gray:hsl(0, 0%, 83%) ;
 --Neutral-Light-Grayish-blue: hsl(210, 46%, 95%);
 /* Fonts */
 
@@ -79,6 +77,7 @@ body {
   justify-content: center;
   height: 100vh;
   background-color: var(--Neutral-Light-Grayish-blue);
+  font-family: "Barlow Semi Condensed";
 }
 
 .grid-container {
@@ -114,30 +113,59 @@ body {
   margin-left: 1.25rem;
 }
 
+.name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.subtext {
+  font-size: 0.75rem;
+  font-weight: 500;
+  opacity: 50%;
+}
+
 .heading-container > .heading {
   margin: 1.5rem 0;
+  font-size: 1.5rem ;
 }
+
+.testimonial-container {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.5;
+  opacity: 70%;
+}
+
+
+
+
+
 /* Grid Children */
 
 
 .grid-child-1 {
   background-color: var(--primary-moderate-violet);
+  color: var(--Neutral-Light-Gray);
 }
 
 .grid-child-2 {
   background-color: var(--primary-dark-grayish-blue);
+  color: var(--Neutral-Light-Gray)
 }
 
 .grid-child-3 {
-background-color: var(--primary-white);
+background-color: white;
+color: var(--primary-dark-blackish-blue);
 }
 
 .grid-child-4 {
  background-color: var(--primary-dark-blackish-blue);
+ color: var(--Neutral-Light-Gray)
 }
 
 .grid-child-5 {
- background-color: var(--primary-white);
+ background-color: white;
+ color: var(--primary-dark-blackish-blue);
 }
 
 
