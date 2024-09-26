@@ -66,7 +66,7 @@
 --primary-moderate-violet: hsl(263, 55%, 52%) ;
 --primary-dark-grayish-blue: hsl(217, 19%, 35%) ;
 --primary-dark-blackish-blue: hsl(219, 29%, 14%);
---primary-white: hsl(0, 0%, 95%) ;
+--primary-white: hsl(0, 0%, 100%) ;
 /* Neutral */
 --Neutral-Light-Gray:hsl(0, 0%, 81%) ;
 --Neutral-Light-Grayish-blue: hsl(210, 46%, 95%);
@@ -78,6 +78,7 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh;
+  background-color: var(--Neutral-Light-Grayish-blue);
 }
 
 .grid-container {
@@ -101,6 +102,42 @@ body {
 
 .grid-children {
   border-radius: 10px;
+}
+
+.profile-container > img {
+  border-radius: 30px;
+  width: 40px;
+}
+
+.name-container {
+  align-content: center;
+  margin-left: 1.25rem;
+}
+
+.heading-container > .heading {
+  margin: 1.5rem 0;
+}
+/* Grid Children */
+
+
+.grid-child-1 {
+  background-color: var(--primary-moderate-violet);
+}
+
+.grid-child-2 {
+  background-color: var(--primary-dark-grayish-blue);
+}
+
+.grid-child-3 {
+background-color: var(--primary-white);
+}
+
+.grid-child-4 {
+ background-color: var(--primary-dark-blackish-blue);
+}
+
+.grid-child-5 {
+ background-color: var(--primary-white);
 }
 
 
