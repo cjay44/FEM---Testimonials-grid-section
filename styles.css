@@ -83,24 +83,20 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 1fr);
-  /* max-height: 500px; */
-  padding: 4rem 2rem;
+  grid-template-rows: repeat(5, 1fr);    
+  margin: 4rem 1.5rem;
   gap: 2rem;
 }
 
 .grid-children {
   background-color: rgb(215, 135, 235);
-  padding: 1rem;
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 .profile-container {
   display: flex;
   width: 100%;
-}
-
-.grid-children {
-  border-radius: 10px;
 }
 
 .profile-container > img {
@@ -130,7 +126,7 @@ body {
 }
 
 .testimonial-container {
-  font-size: 0.75rem;
+  /* font-size: 0.75rem; */
   font-weight: 600;
   line-height: 1.5;
   opacity: 70%;
@@ -148,6 +144,10 @@ body {
   color: var(--Neutral-Light-Gray);
 }
 
+.grid-child-1 > .profile-container > img {
+  border: 2px solid rgb(199, 136, 228);
+}
+
 .grid-child-2 {
   background-color: var(--primary-dark-grayish-blue);
   color: var(--Neutral-Light-Gray)
@@ -161,6 +161,9 @@ color: var(--primary-dark-blackish-blue);
 .grid-child-4 {
  background-color: var(--primary-dark-blackish-blue);
  color: var(--Neutral-Light-Gray)
+}
+.grid-child-4 > .profile-container > img {
+  border: 2px solid var(--primary-moderate-violet);
 }
 
 .grid-child-5 {
